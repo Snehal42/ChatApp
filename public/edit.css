@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #1b1b1f, #0d0d10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e8e8e8;
+}
+
+/* Form Container */
+.container {
+    width: 480px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(140, 120, 255, 0.25);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #c4b4ff;
+    font-size: 28px;
+}
+
+/* Chat Details */
+.details {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #8f7bff;
+}
+
+.details p {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+/* Input Area */
+label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    background: #1e1e22;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    resize: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #8878ff;
+    box-shadow: 0px 0px 10px rgba(150, 130, 255, 0.35);
+    outline: none;
+}
+
+/* Save Button */
+.save-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(135deg, #7b6dff, #a488ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.save-btn:hover {
+    background: linear-gradient(135deg, #6c5de6, #9074ff);
+    transform: translateY(-2px);
+}
