@@ -32,8 +32,9 @@ app.listen(port,()=>{
     console.log(`app is listening on port ${port}`);
 })
 
-app.get("/",(req,res)=>{
-    res.send("Root is Working");
+app.get("/",async (req,res)=>{
+    let chats = await Chat.find();
+    res.render("index.ejs",{chats})
 })
 
 // index Rout
